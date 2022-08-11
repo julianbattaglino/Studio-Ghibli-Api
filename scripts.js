@@ -1,4 +1,4 @@
-//fetch data from movies using fetch ajax
+//fetch data from ghibliapi 
 
 fetch('https://ghibliapi.herokuapp.com/films') //fetch data from movies using fetch ajax
     .then(res => res.json()) //convert data to json
@@ -27,7 +27,7 @@ fetch('https://ghibliapi.herokuapp.com/films') //fetch data from movies using fe
         );
     }
     );
-    
+
 
 
 
