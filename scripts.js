@@ -49,7 +49,7 @@ renderFooter();
 
 window.addEventListener('scroll', function () {
     let header = document.querySelector('header');
-    if (window.scrollY > 100) {
+    if (window.scrollY > 200) {
         header.classList.add('fixed');
     } else
         header.classList.remove('fixed');
