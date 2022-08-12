@@ -1,3 +1,8 @@
+body {
+    overflow-x: hidden;
+}
+
+
 .fixed {
     position: fixed;
     top: 0;
@@ -20,12 +25,21 @@ header {
 .movies-grid {
     padding: 75px 75px;
 }
+article.movie {
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
 .movie-title {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     padding-top: 15px
 }
 .movie-title-romanised {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+.movie-date {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
 }
@@ -38,6 +52,10 @@ header {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+.rating {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
 }
 .director-producer {
     font-family: 'Rubik', sans-serif;
@@ -66,4 +84,16 @@ header {
 
 .difference {
     mix-blend-mode: difference;
+}
+
+.footer-container {
+    padding: 15px 75px;
+    background-color: rgb(239, 239, 239);
+}
+.copyright {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
