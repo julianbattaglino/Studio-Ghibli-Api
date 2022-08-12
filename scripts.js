@@ -1,9 +1,9 @@
 //fetch data from ghibliapi 
-
 fetch('https://ghibliapi.herokuapp.com/films') //fetch data from movies using fetch ajax
     .then(res => res.json()) //convert data to json
-    .then(data => { //display data in console
-        console.log(data);
+    .then(data => {
+        //display data in console
+        console.log("Ghibli Studios Films Array", data);
 
         //Loop foreach para recorrer el array de peliculas
         data.forEach(pelicula => {
@@ -27,6 +27,17 @@ fetch('https://ghibliapi.herokuapp.com/films') //fetch data from movies using fe
         );
     }
     );
+
+    window.addEventListener('scroll', function() {
+        let header = document.querySelector('header');
+        if (window.scrollY > 100) {
+          header.classList.add('fixed');
+        } else
+        header.classList.remove('fixed');
+      });            
+
+
+
 
 
 
