@@ -11,15 +11,14 @@ fetch('https://ghibliapi.herokuapp.com/films') //fetch data from movies using fe
             //crear un elemento para cada pelicula
             const movieItem = document.createElement('div');
             movieItem.classList.add('col-12', 'col-md-4', 'col-lg-3');
-            movieItem.innerHTML = `
+            movieItem.innerHTML = 
+            `
             <img class="movie-img" src="${pelicula.movie_banner}" alt="${pelicula.title}">
             <h2 class="movie-title">${pelicula.title}</h2>
             <h2 class="movie-title-romanised">${pelicula.original_title_romanised}</h2>
             <p class="movie-extract">${pelicula.description}</p>
             <h3 class="director-producer">Director: ${pelicula.director}</h3>
             <h3 class="director-producer">Producer: ${pelicula.producer}</h3>
-
-
             `;
             //Agregar cards al nodo padre
             document.querySelector('#movie-list').appendChild(movieItem);
@@ -35,32 +34,3 @@ fetch('https://ghibliapi.herokuapp.com/films') //fetch data from movies using fe
         } else
         header.classList.remove('fixed');
       });            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
